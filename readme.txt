@@ -71,7 +71,7 @@ If your issues persist, do not hesitate to contact me via email!
 == Changelog ==
 
 = 2.4.1 =
-* Add WP CLI support.
+* Fix CSRF possibility (thanks to Marek Mikita for reporting via PatchStack).
 
 = 2.4.0 =
 * Add WP CLI support.
