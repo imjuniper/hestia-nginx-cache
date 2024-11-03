@@ -66,7 +66,9 @@ You can try to resolve the problem by purging the cache, deactivating the plugin
 
 If you are using Cloudflare and get an error when purging the cache, enter the hostname of the Hestia install in the settings, not the site URL.
 
-If your issues persist, do not hesitate to contact me via email!
+= How can I report security bugs? =
+
+You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team help validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/hestia-nginx-cache)
 
 == Changelog ==
 
