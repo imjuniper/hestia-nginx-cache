@@ -263,6 +263,13 @@ class Hestia_Nginx_Cache_Admin
 
 	public function purge()
 	{
+		if (!current_user_can('edit_posts')) {
+			wp_send_json_error([
+				'message' => esc_html__('The Hestia Nginx Cache could not be purged!', 'hestia-nginx-cache'),
+				'error'   => esc_html__('Not enough permissions.', 'hestia-nginx-cache')
+			]);
+		}
+
 		if (!wp_verify_nonce($_POST['wp_nonce'], 'hestia-nginx-cache-purge-wp-nonce')) {
 			wp_send_json_error([
 				'message' => esc_html__('The Hestia Nginx Cache could not be purged!', 'hestia-nginx-cache'),
