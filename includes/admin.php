@@ -263,6 +263,20 @@ class Hestia_Nginx_Cache_Admin
 
 	public function purge()
 	{
+		if (!current_user_can('edit_posts')) {
+			wp_send_json_error([
+				'message' => esc_html__('The Hestia Nginx Cache could not be purged!', 'hestia-nginx-cache'),
+				'error'   => esc_html__('Not enough permissions.', 'hestia-nginx-cache')
+			]);
+		}
+
+		if (!wp_verify_nonce($_POST['wp_nonce'], 'hestia-nginx-cache-purge-wp-nonce')) {
+			wp_send_json_error([
+				'message' => esc_html__('The Hestia Nginx Cache could not be purged!', 'hestia-nginx-cache'),
+				'error'   => esc_html__('Invalid nonce.', 'hestia-nginx-cache')
+			]);
+		}
+
 		$result = $this->plugin->purge(true);
 		if ($result) {
 			$exit_code = wp_remote_retrieve_header($result, 'Hestia-Exit-Code');
@@ -280,10 +294,10 @@ class Hestia_Nginx_Cache_Admin
 				$args['error'] = 'Unknown error';
 			}
 			wp_send_json_error($args);
-		} elseif (wp_verify_nonce($_POST['wp_nonce'], 'hestia-nginx-cache-purge-wp-nonce')) {
-			wp_send_json_success([
-				'message' => esc_html__('The Hestia Nginx Cache was purged successfully.', 'hestia-nginx-cache')
-			]);
 		}
+
+		wp_send_json_success([
+			'message' => esc_html__('The Hestia Nginx Cache was purged successfully.', 'hestia-nginx-cache')
+		]);
 	}
 }
