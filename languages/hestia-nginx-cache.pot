@@ -1,4 +1,4 @@
-# Copyright (C) 2024 Jakob Bouchard
+# Copyright (C) 2025 Juniper Bouchard
 # This file is distributed under the GPL v3.
 msgid ""
 msgstr ""
@@ -9,38 +9,38 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-24T21:41:55+00:00\n"
+"POT-Creation-Date: 2025-03-31T23:47:09+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: hestia-nginx-cache\n"
 
 #. Plugin Name of the plugin
-#: C:\Users\Jakob\Dev\jaap-hst-nginx-cache\hestia-nginx-cache.php
+#: hestia-nginx-cache.php
+#: includes/admin.php:192
 #: includes/admin.php:193
-#: includes/admin.php:194
-#: includes/admin.php:208
+#: includes/admin.php:207
 #: includes/site_health.php:44
 msgid "Hestia Nginx Cache"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: C:\Users\Jakob\Dev\jaap-hst-nginx-cache\hestia-nginx-cache.php
-msgid "https://github.com/jakobbouchard/hestia-nginx-cache"
+#: hestia-nginx-cache.php
+msgid "https://github.com/imjuniper/hestia-nginx-cache"
 msgstr ""
 
 #. Description of the plugin
-#: C:\Users\Jakob\Dev\jaap-hst-nginx-cache\hestia-nginx-cache.php
+#: hestia-nginx-cache.php
 msgid "Hestia Nginx Cache Integration for WordPress. Auto-purges the Nginx cache when needed."
 msgstr ""
 
 #. Author of the plugin
-#: C:\Users\Jakob\Dev\jaap-hst-nginx-cache\hestia-nginx-cache.php
-msgid "Jakob Bouchard"
+#: hestia-nginx-cache.php
+msgid "Juniper Bouchard"
 msgstr ""
 
 #. Author URI of the plugin
-#: C:\Users\Jakob\Dev\jaap-hst-nginx-cache\hestia-nginx-cache.php
-msgid "https://jakobbouchard.dev"
+#: hestia-nginx-cache.php
+msgid "https://imjuniper.fyi"
 msgstr ""
 
 #: includes/admin.php:60
@@ -101,21 +101,31 @@ msgstr ""
 msgid "Settings for the plugin."
 msgstr ""
 
-#: includes/admin.php:176
+#: includes/admin.php:175
 msgid "Leave empty for default"
 msgstr ""
 
-#: includes/admin.php:215
-#: includes/admin.php:249
+#: includes/admin.php:214
+#: includes/admin.php:248
 msgid "Purge Nginx Cache"
 msgstr ""
 
-#: includes/admin.php:232
-#: includes/admin.php:273
+#: includes/admin.php:231
+#: includes/admin.php:268
+#: includes/admin.php:275
+#: includes/admin.php:286
 msgid "The Hestia Nginx Cache could not be purged!"
 msgstr ""
 
-#: includes/admin.php:286
+#: includes/admin.php:269
+msgid "Not enough permissions."
+msgstr ""
+
+#: includes/admin.php:276
+msgid "Invalid nonce."
+msgstr ""
+
+#: includes/admin.php:300
 msgid "The Hestia Nginx Cache was purged successfully."
 msgstr ""
 
