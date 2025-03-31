@@ -4,18 +4,18 @@
  * Hestia Nginx Cache
  *
  * @package           Hestia_Nginx_Cache
- * @author            Jakob Bouchard
+ * @author            Juniper Bouchard
  * @license           GPL-3.0+
  *
  * @wordpress-plugin
  * Plugin Name:       Hestia Nginx Cache
  * Description:       Hestia Nginx Cache Integration for WordPress. Auto-purges the Nginx cache when needed.
- * Plugin URI:        https://github.com/jakobbouchard/hestia-nginx-cache
+ * Plugin URI:        https://github.com/imjuniper/hestia-nginx-cache
  * Version:           2.4.1
  * Requires at least: 4.8
  * Requires PHP:      5.4
- * Author:            Jakob Bouchard
- * Author URI:        https://jakobbouchard.dev
+ * Author:            Juniper Bouchard
+ * Author URI:        https://imjuniper.fyi
  * Text Domain:       hestia-nginx-cache
  * License:           GPL v3
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt

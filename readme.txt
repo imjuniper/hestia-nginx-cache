@@ -1,6 +1,6 @@
 === Hestia Nginx Cache ===
 Contributors: jakobbouchard, jaapmarcus
-Donate link: https://github.com/sponsors/jakobbouchard
+Donate link: https://github.com/sponsors/imjuniper
 Tags: cache, flush, purge, hestia, nginx
 Requires at least: 4.8
 Tested up to: 6.6
