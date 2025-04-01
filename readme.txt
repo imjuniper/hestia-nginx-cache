@@ -1,11 +1,11 @@
 === Hestia Nginx Cache ===
 Contributors: jakobbouchard, jaapmarcus
-Donate link: https://github.com/sponsors/jakobbouchard
+Donate link: https://github.com/sponsors/imjuniper
 Tags: cache, flush, purge, hestia, nginx
 Requires at least: 4.8
 Tested up to: 6.6
 Requires PHP: 5.4
-Stable tag: 2.4.1
+Stable tag: 2.4.2
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -69,6 +69,9 @@ If you are using Cloudflare and get an error when purging the cache, enter the h
 If your issues persist, do not hesitate to contact me via email!
 
 == Changelog ==
+
+= 2.4.2 =
+* Update author name, repo links, etc.
 
 = 2.4.1 =
 * Fix CSRF possibility (thanks to Marek Mikita for reporting via PatchStack).

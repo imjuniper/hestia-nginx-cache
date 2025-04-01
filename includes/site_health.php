@@ -4,7 +4,7 @@
  * Hestia Nginx Cache
  *
  * @package           Hestia_Nginx_Cache
- * @author            Jakob Bouchard
+ * @author            Juniper Bouchard
  * @license           GPL-3.0+
  *
  * Class Hestia_Nginx_Cache_Site_Health adds the plugin status and information to the WP Site Health admin page.
