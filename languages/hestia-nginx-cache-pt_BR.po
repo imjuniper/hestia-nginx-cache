@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2024-02-14T03:00:09+00:00\n"
-"PO-Revision-Date: 2025-04-01 10:54+0000\n"
+"PO-Revision-Date: 2025-04-01 11:09+0000\n"
 "Language: pt-BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Source-Locale: en_CA\n"
@@ -23,7 +23,7 @@ msgstr "Chave de acesso"
 
 #: includes/admin.php:82
 msgid "Admin bar button text"
-msgstr "Texto do botão na barra de administração"
+msgstr "Texto do botão da barra de administração"
 
 #: includes/admin.php:72
 msgid "API Settings"
@@ -54,7 +54,7 @@ msgid ""
 "when needed."
 msgstr ""
 "Integração de Hestia Nginx Cache para WordPress. Limpa automaticamente o "
-"cache Nginx quando necessário."
+"cache do Nginx quando necessário."
 
 #: includes/admin.php:77
 msgid "Hestia username"
@@ -70,6 +70,10 @@ msgstr "https://github.com/imjuniper/hestia-nginx-cache"
 msgid "https://imjuniper.fyi"
 msgstr "https://imjuniper.fyi"
 
+#: includes/admin.php:276
+msgid "Invalid nonce."
+msgstr "Nonce inválido."
+
 #. Author of the plugin
 #: hestia-nginx-cache.php
 msgid "Juniper Bouchard"
@@ -77,15 +81,19 @@ msgstr "Juniper Bouchard"
 
 #: includes/admin.php:175
 msgid "Leave empty for default"
-msgstr "Padrão em branco"
+msgstr "Deixe em branco por padrão"
+
+#: includes/admin.php:269
+msgid "Not enough permissions."
+msgstr "Não há permissões suficientes."
 
 #: includes/admin.php:107
 msgid ""
 "Please refer to the plugin's installation guide for information on how to "
 "generate an API key."
 msgstr ""
-"Por favor, consulte o guia de instalação do plugin para obter informações "
-"sobre como gerar uma chave de API."
+"Consulte o guia de instalação do plug-in para obter informações sobre como "
+"gerar uma chave de API."
 
 #: includes/admin.php:80
 msgid "Plugin Settings"
@@ -122,11 +130,11 @@ msgstr "Exibir botão na barra de administração"
 #: includes/admin.php:231 includes/admin.php:268 includes/admin.php:275 
 #: includes/admin.php:286
 msgid "The Hestia Nginx Cache could not be purged!"
-msgstr "Não foi possível limpar o Cache do Nginx Hestia Cache!"
+msgstr "O Cache do Hestia Nginx não pôde ser limpo!"
 
 #: includes/admin.php:300
 msgid "The Hestia Nginx Cache was purged successfully."
-msgstr "O Cache do Hestia Nginx Cache foi limpo com sucesso."
+msgstr "O Cache do Hestia Nginx foi limpo com sucesso."
 
 #: includes/site_health.php:52
 msgid "The plugin has been configured"
@@ -139,11 +147,3 @@ msgstr "O plugin não foi configurado"
 #: includes/site_health.php:47
 msgid "Version"
 msgstr "Versão"
-
-#: includes/admin.php:269
-msgid "Not enough permissions."
-msgstr "Não há permissões suficientes."
-
-#: includes/admin.php:276
-msgid "Invalid nonce."
-msgstr "Nonce inválido."
