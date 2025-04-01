@@ -4,7 +4,7 @@
  * Hestia Nginx Cache
  *
  * @package           Hestia_Nginx_Cache
- * @author            Jakob Bouchard
+ * @author            Juniper Bouchard
  * @license           GPL-3.0+
  */
 
