@@ -5,7 +5,7 @@ Tags: cache, flush, purge, hestia, nginx
 Requires at least: 4.8
 Tested up to: 6.8
 Requires PHP: 5.4
-Stable tag: 2.4.2
+Stable tag: 2.4.3
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -70,6 +70,9 @@ If your issues persist, do not hesitate to contact me via email!
 
 == Changelog ==
 
+= 2.4.3 =
+* Update translations for Brazilian Portuguese
+
 = 2.4.2 =
 * Update author name, repo links, etc.
 
@@ -88,7 +91,7 @@ If your issues persist, do not hesitate to contact me via email!
 = 2.2.4 =
 * Fix the purge button not working in the frontend.
 * Add notice when purging in the frontend.
-* Add translations for "pt_BR" and "fr_CA".
+* Add translations for Brazilian Portuguese and Canadian French.
 
 = 2.2.3 =
 * Fix some PHP warnings.

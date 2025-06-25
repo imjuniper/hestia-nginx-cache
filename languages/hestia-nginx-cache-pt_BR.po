@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Hestia Nginx Cache 2.4.2\n"
+"Project-Id-Version: Hestia Nginx Cache 2.4.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hestia-nginx-"
 "cache\n"
 "Last-Translator: Maison da Silva\n"
@@ -42,7 +42,7 @@ msgid "Domain to purge"
 msgstr "Domínio a limpar"
 
 #. Plugin Name of the plugin
-#: hestia-nginx-cache.php includes/admin.php:192 includes/admin.php:193 
+#: hestia-nginx-cache.php includes/admin.php:192 includes/admin.php:193
 #: includes/admin.php:207 includes/site_health.php:44
 msgid "Hestia Nginx Cache"
 msgstr "Hestia Nginx Cache"
@@ -127,7 +127,7 @@ msgstr "Configurações para o plugin"
 msgid "Show button in the admin bar"
 msgstr "Exibir botão na barra de administração"
 
-#: includes/admin.php:231 includes/admin.php:268 includes/admin.php:275 
+#: includes/admin.php:231 includes/admin.php:268 includes/admin.php:275
 #: includes/admin.php:286
 msgid "The Hestia Nginx Cache could not be purged!"
 msgstr "O Cache do Hestia Nginx não pôde ser limpo!"
