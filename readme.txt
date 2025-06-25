@@ -3,7 +3,7 @@ Contributors: jakobbouchard, jaapmarcus
 Donate link: https://github.com/sponsors/imjuniper
 Tags: cache, flush, purge, hestia, nginx
 Requires at least: 4.8
-Tested up to: 6.6
+Tested up to: 6.8
 Requires PHP: 5.4
 Stable tag: 2.4.2
 License: GPL v3
