@@ -2,7 +2,7 @@
 # This file is distributed under the GPL v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hestia Nginx Cache 2.4.2\n"
+"Project-Id-Version: Hestia Nginx Cache 2.4.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hestia-nginx-cache\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
