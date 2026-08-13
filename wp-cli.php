@@ -1,12 +1,12 @@
 <?php
 
 if (!defined('ABSPATH')) {
-		die();
+	die();
 }
 
 if (!defined('WP_CLI')) return;
 
-class WP_CLI_WP_Hestia_Nginx_Cache extends WP_CLI_Command {
+class Hestia_Nginx_Cache_CLI_Command extends WP_CLI_Command {
 
 	public function __construct(){
 		$this -> plugin = Hestia_Nginx_Cache::get_instance();
@@ -45,11 +45,11 @@ class WP_CLI_WP_Hestia_Nginx_Cache extends WP_CLI_Command {
 		}
 		//validate
 		$port = intval($port);
-		$domain = parse_url($domain, PHP_URL_HOST) ?: $domain;
+		$domain = wp_parse_url($domain, PHP_URL_HOST) ?: $domain;
 
 		$options = array('access_key' => $access_key, 'secret_key' => $secret_key, 'user' => $user, 'domain' => $domain, 'host' => $host, 'port' => $port, 'disable_automatic_purge' => $disable_automatic_purge);
 		update_option(Hestia_Nginx_Cache::NAME, $options);
 	}
 }
 
-WP_CLI::add_command('hestia-cache', 'WP_CLI_WP_Hestia_Nginx_Cache');
+WP_CLI::add_command('hestia-cache', 'Hestia_Nginx_Cache_CLI_Command');
