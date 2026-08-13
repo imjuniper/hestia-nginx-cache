@@ -11,7 +11,7 @@
  * Plugin Name:       Hestia Nginx Cache
  * Description:       Hestia Nginx Cache Integration for WordPress. Auto-purges the Nginx cache when needed.
  * Plugin URI:        https://github.com/imjuniper/hestia-nginx-cache
- * Version:           2.4.3
+ * Version:           2.4.4
  * Requires at least: 4.8
  * Requires PHP:      5.4
  * Author:            Juniper Bouchard
@@ -28,7 +28,7 @@ if (!defined('ABSPATH')) {
 class Hestia_Nginx_Cache
 {
 	public const NAME = 'hestia-nginx-cache';
-	public const VERSION = '2.4.3';
+	public const VERSION = '2.4.4';
 
 	private static $instance = null;
 	public static $plugin_basename = null;
@@ -86,8 +86,6 @@ class Hestia_Nginx_Cache
 
 	public function init()
 	{
-		load_plugin_textdomain(self::NAME, false, self::NAME . '/languages');
-
 		// Register site_health
 		if (is_admin()) {
 			require_once __DIR__ . '/includes/site_health.php';

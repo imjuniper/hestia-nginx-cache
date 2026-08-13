@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", (_evt) => {
 				headers: { "Content-Type": "application/x-www-form-urlencoded" },
 				body: new URLSearchParams({
 					action: "hestia_nginx_cache_manual_purge",
-					wp_nonce: nonce.textContent,
+					_wpnonce: nonce.textContent,
 				}),
 			});
 

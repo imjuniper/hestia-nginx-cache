@@ -2,9 +2,9 @@
 Contributors: imjuniper, jaapmarcus
 Tags: cache, flush, purge, hestia, nginx
 Requires at least: 4.8
-Tested up to: 6.8
+Tested up to: 7.1
 Requires PHP: 5.4
-Stable tag: 2.4.3
+Stable tag: 2.4.4
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -70,6 +70,9 @@ If you are using Cloudflare and get an error when purging the cache, enter the h
 You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team help validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/hestia-nginx-cache)
 
 == Changelog ==
+
+= 2.4.4 =
+* Fix warnings & errors from Plugin Check
 
 = 2.4.3 =
 * Update translations for Brazilian Portuguese
