@@ -279,9 +279,14 @@ class Hestia_Nginx_Cache_Admin
 			]);
 		}
 
-		$query_arg = '_wpnonce';
-		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-		$valid_nonce = isset( $_REQUEST[ $query_arg ] ) ? wp_verify_nonce( $_REQUEST[ $query_arg ], 'hestia-nginx-cache-purge-wp-nonce' ) : false;
+		$nonce = '';
+		if (isset($_POST['_wpnonce'])) {
+			$nonce = sanitize_text_field(wp_unslash($_POST['_wpnonce']));
+		} elseif (isset($_POST['wp_nonce'])) {
+			$nonce = sanitize_text_field(wp_unslash($_POST['wp_nonce']));
+		}
+
+		$valid_nonce = $nonce !== '' ? wp_verify_nonce($nonce, 'hestia-nginx-cache-purge-wp-nonce') : false;
 
 		if (!$valid_nonce) {
 			wp_send_json_error([
